@@ -1,25 +1,87 @@
 :root {
+  /* 
+  COLORES
+  Definición de las variables de los colores de la app
+   */
+
   --black-1: #030303;
   --black-2: #111111;
   --gray-1: #a1a1a1;
   --gray-2: #ededed;
+  --gray-2-hv: rgba(237, 237, 237, 0.1);
   --white: #ffffff;
   --contrast-1: #0070f3;
+
+  /* 
+  ESPACIADO
+  Definición de las variables de que se usarán para 
+  el espaciado del proyecto
+   */
+
+  --space-xs: 0.6rem;
+  --space-s: 0.8rem;
+  --space-m: 1.2rem;
+  --space-l: 2.4rem;
+  --space-xl: 3.2rem;
+  --space-xxl: 4.6rem;
+}
+
+/* 
+  RESET
+  Reseteo del CSS para ajusta el proyecto a las medidas
+  relativas y la implementación de clases.
+   */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: var(--black-1);
 }
 
-h1 {
-  color: var(--white);
+a {
+  text-decoration: none;
 }
-h2 {
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* 
+  TEXTOS
+  Definición de los estilos del texto que se usarán
+  en toda la aplicación
+   */
+
+.text-title {
+  font-size: clamp(32px, 4vw + 1rem, 48px);
   color: var(--gray-2);
 }
-h3 {
+.text-subtitle {
+  font-size: clamp(1.8rem, 4vw + 1rem, 2.4rem);
+  color: var(--gray-2);
+}
+.text-p {
+  font-size: clamp(1.4rem, 4vw + 1, 1.8rem);
   color: var(--gray-1);
 }
-h4 {
-  color: var(--contrast-1);
+
+/* 
+  PÁGINAS
+  Definición de estilos globales para las 
+  páginas del proyecto
+   */
+
+main {
+  width: 100%;
+  max-width: 128rem;
+  min-height: 100dvh;
+  margin: 0 auto;
 }

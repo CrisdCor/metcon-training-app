@@ -1,12 +1,11 @@
-import Image from "next/image";
+import { redirect } from "next/navigation";
 
-export default function Home() {
+export default function HomePage() {
+  redirect("/metcon/login");
+
   return (
-    <main className="main-home">
-      <h1>Color especial</h1>
-      <h2>Color texto</h2>
-      <h3>Color texto</h3>
-      <h4>Color texto</h4>
-    </main>
+    <>
+      <h1>Hola Mundo</h1>
+    </>
   );
 }
