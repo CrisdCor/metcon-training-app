@@ -1,13 +1,18 @@
 import "./styles.css";
 
-export default function InputPrimary() {
+interface Props {
+  placeholder?: string;
+  type: string;
+}
+
+export default function InputPrimary({ placeholder, type }: Props) {
   return (
-    <form className="input-wrap">
+    <>
       <input
-        className="text-p"
-        type="password"
-        placeholder="Ingresa el código del WOD"
+        className="input-btn text-p"
+        type={type}
+        placeholder={placeholder}
       ></input>
-    </form>
+    </>
   );
 }

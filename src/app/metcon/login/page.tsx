@@ -1,22 +1,20 @@
-import { IoCaretDown } from "react-icons/io5";
-
-import ButtonPrimary from "@/components/ButtonPrimary/ButtonPrimary";
 import InputPrimary from "@/components/InputPrimary/InputPrimary";
+import ButtonNav from "@/components/ButtonNav/ButtonNav";
 
 import "./styles.css";
 
-export default function WodPage() {
+export default function LoginPage() {
   return (
     <main className="login-page">
       <h2 className="text-title">Atleta ¡Bienvenido!</h2>
       <div className="login-form">
-        <div className="button-wod">
-          <ButtonPrimary
-            text="WOD"
-            icon={<IoCaretDown size={24} className="button__icon" />}
+        <form className="form-element">
+          <InputPrimary
+            type="password"
+            placeholder="Ingresa el código del WOD"
           />
-        </div>
-        <InputPrimary />
+          <ButtonNav text="Start WOD" path="/metcon/wod" />
+        </form>
       </div>
     </main>
   );

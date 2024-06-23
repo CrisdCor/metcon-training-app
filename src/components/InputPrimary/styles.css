@@ -1,19 +1,15 @@
-.input-wrap {
-  width: 100%;
-  max-width: 26rem;
-  height: var(--space-xl);
-  display: flex;
-  border-radius: var(--space-xs);
-  overflow: hidden;
-  background: var(--black-2);
-  transition: background 0.6s;
-}
-
-.input-wrap input {
+.input-btn {
   width: 100%;
   height: 100%;
+  padding: 0 var(--space-m);
   color: var(--gray-2);
-  text-align: center;
-  background: transparent;
-  border: none;
+  background: var(--black-3);
+  border-radius: var(--space-xs);
+  border: 0.1rem solid transparent;
+  transition: border 0.5s;
+}
+
+.input-btn:focus {
+  border: 0.1rem solid var(--contrast-1);
+  transition: border 0.3s;
 }

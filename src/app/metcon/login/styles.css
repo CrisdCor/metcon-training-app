@@ -12,12 +12,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-s);
 }
 
-.button-wod {
+.form-element {
+  position: relative;
   width: 100%;
   max-width: 28rem;
   height: var(--space-xxl);
-  /* padding: 0.2rem; */
+}
+
+.form-element input {
+  padding-right: 35%;
+}
+
+.form-element a {
+  width: auto;
+  height: 75%;
+  position: absolute;
+  right: var(--space-s);
+  top: 50%;
+  transform: translateY(-50%);
 }

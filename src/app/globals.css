@@ -6,6 +6,7 @@
 
   --black-1: #030303;
   --black-2: #111111;
+  --black-3: #1a1a1a;
   --gray-1: #a1a1a1;
   --gray-2: #ededed;
   --gray-2-hv: rgba(237, 237, 237, 0.1);
@@ -52,6 +53,10 @@ a {
 ul {
   padding: 0;
   list-style: none;
+}
+
+input {
+  outline: none;
 }
 
 /* 
