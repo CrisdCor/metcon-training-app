@@ -1,0 +1,19 @@
+.wod-wrap {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wod-section {
+  width: 100%;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.1rem solid var(--white);
+  /* border-bottom: 0.1rem solid var(--white); */
+}

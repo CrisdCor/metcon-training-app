@@ -59,6 +59,12 @@ input {
   outline: none;
 }
 
+h1,
+h2,
+p {
+  color: var(--gray-1);
+}
+
 /* 
   TEXTOS
   Definición de los estilos del texto que se usarán
@@ -76,6 +82,16 @@ input {
 .text-p {
   font-size: clamp(1.4rem, 4vw + 1, 1.8rem);
   color: var(--gray-1);
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
 /* 
